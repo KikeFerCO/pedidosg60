@@ -1,10 +1,11 @@
 import {inject, lifeCycleObserver, LifeCycleObserver} from '@loopback/core';
 import {juggler} from '@loopback/repository';
+import {Llaves} from '../config/llaves';
 
 const config = {
   name: 'mongodb',
   connector: 'mongodb',
-  url: 'mongodb+srv://KikeFerCO:58caSI9TexA9@misiontic2022.eranpqf.mongodb.net/PedidosBDG60?retryWrites=true&w=majority',
+  url: `${Llaves.cadenaConexion}`,
   host: '',
   port: 0,
   user: '',
